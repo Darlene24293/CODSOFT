@@ -1,62 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
 body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  font-family: Arial, sans-serif;
 }
 
 .calculator {
   background: #1e1e2f;
-  padding: 20px;
-  border-radius: 15px;
-  width: 260px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  width: 320px;
 }
 
 #display {
   width: 100%;
-  height: 60px;
-  font-size: 28px;
-  padding: 12px;
-  margin-bottom: 15px;
+  height: 70px;
+  font-size: 32px;
+  padding: 15px;
+  margin-bottom: 20px;
   text-align: right;
 
-  background-color: #2b2f4b;
-  color: #ffffff;          /* PURE WHITE */
-  font-weight: 700;
+  background: #111827;
+  color: #ffffff;              /* PURE WHITE TEXT */
+  font-weight: bold;
 
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   outline: none;
-  opacity: 1;              /* FORCE FULL VISIBILITY */
 }
-
-
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 
 button {
-  padding: 15px;
-  font-size: 18px;
+  height: 55px;
+  font-size: 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  background: #2e2e4d;
-  color: white;
+  background: #2d2f4a;
+  color: #ffffff;
+  transition: all 0.2s ease;
 }
 
 button:hover {
-  background: #3f3f6b;
+  background: #3f4165;
 }
 
-button:active {
-  transform: scale(0.95);
+.operator {
+  background: #f59e0b;
+  color: #000;
+  font-weight: bold;
+}
+
+.operator:hover {
+  background: #fbbf24;
+}
+
+.equal {
+  background: #22c55e;
+  color: #000;
+  grid-row: span 2;
+}
+
+.equal:hover {
+  background: #4ade80;
 }
 
 .zero {
