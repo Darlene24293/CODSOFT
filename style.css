@@ -18,13 +18,18 @@ body {
 #display {
   width: 100%;
   height: 50px;
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 15px;
   text-align: right;
   padding: 10px;
   border-radius: 8px;
   border: none;
+
+  background: #ffffff;   /* bright background */
+  color: #000000;        /* DARK text so numbers are visible */
+  font-weight: bold;
 }
+
 
 .buttons {
   display: grid;
