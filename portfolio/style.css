@@ -100,3 +100,11 @@ section p {
     line-height: 1.6;
     font-size: 14px;
 }
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #a65a3a;
+    color: white;
+    margin-top: 40px;
+}
